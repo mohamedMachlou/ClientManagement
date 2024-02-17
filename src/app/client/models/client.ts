@@ -6,5 +6,6 @@ export interface Client {
   lastName: string;
   phoneNumber?: string;
   grade: Grade;
-  status: string[];
+  status: boolean;
+  subDate: Date;
 }

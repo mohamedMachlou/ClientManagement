@@ -19,20 +19,8 @@ export class ClientEditComponent implements OnInit {
     lastName: '',
     phoneNumber: '',
     grade: { id: 0, label: '' },
-    status: [
-      'Janvier',
-      'Février',
-      'Mars',
-      'April',
-      'Mai',
-      'Juin',
-      'Juilet',
-      'Aout',
-      'Septembre',
-      'Octobre',
-      'Nouvembre',
-      'Décembre',
-    ],
+    status: false,
+    subDate: new Date(),
   });
   // Services
   clientService = inject(ClientService);

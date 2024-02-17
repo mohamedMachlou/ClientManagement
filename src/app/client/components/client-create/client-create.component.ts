@@ -3,6 +3,7 @@ import { Grade } from '../../models/grade';
 import { GradeService } from '../../services/grade.service';
 import { Client } from '../../models/client';
 import { ClientService } from '../../services/client.service';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-client-create',
@@ -17,20 +18,8 @@ export class ClientCreateComponent implements OnInit {
     lastName: '',
     phoneNumber: '',
     grade: { id: 0, label: '' },
-    status: [
-      'Janvier',
-      'Février',
-      'Mars',
-      'April',
-      'Mai',
-      'Juin',
-      'Juilet',
-      'Aout',
-      'Septembre',
-      'Octobre',
-      'Nouvembre',
-      'Décembre',
-    ],
+    status: false,
+    subDate: new Date(),
   });
   // Injection of the services
   gradeService = inject(GradeService);
@@ -38,6 +27,7 @@ export class ClientCreateComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllGrades();
+    console.log(this.newClient().subDate);
   }
 
   // Reset Client Information
@@ -48,20 +38,8 @@ export class ClientCreateComponent implements OnInit {
       lastName: '',
       phoneNumber: '',
       grade: { id: 0, label: '' },
-      status: [
-        'Janvier',
-        'Février',
-        'Mars',
-        'April',
-        'Mai',
-        'Juin',
-        'Juilet',
-        'Aout',
-        'Septembre',
-        'Octobre',
-        'Nouvembre',
-        'Décembre',
-      ],
+      status: false,
+      subDate: new Date(),
     });
   }
 

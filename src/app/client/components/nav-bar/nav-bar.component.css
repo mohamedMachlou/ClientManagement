@@ -32,7 +32,6 @@
   color: var(--main-color);
 }
 .li-deactive {
-  /* color: var(--main-color); */
   color: white;
 }
 .li-active {
@@ -49,7 +48,7 @@
   color: white !important;
 }
 .header .nav ul li:hover {
-  background-color: var(--main-color);
+  background-color: var(--main-color-hover);
 }
 @media (min-width: 998px) {
   .header .container {
@@ -65,7 +64,6 @@
     content: " ";
     width: 685px;
     height: 2px;
-    /* background-color: red; */
     background-color: var(--main-color);
     position: absolute;
     bottom: 16px;
