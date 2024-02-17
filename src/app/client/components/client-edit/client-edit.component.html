@@ -1,0 +1,56 @@
+<!-- Start edit client section -->
+<div class="edit-client-section">
+  <div class="edit-client">
+    <i class="fa-regular fa-newspaper"></i>
+    <h3>Edit Client</h3>
+  </div>
+
+  <div class="form">
+    <div class="form-group">
+      <label for="firstName">First Name :</label>
+      <input
+        [(ngModel)]="clientEdit().firstName"
+        id="firstName"
+        type="text"
+        placeholder="your first name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input
+        [(ngModel)]="clientEdit().lastName"
+        id="lastName"
+        type="text"
+        placeholder="your last name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input
+        [(ngModel)]="clientEdit().phoneNumber"
+        id="phone"
+        type="text"
+        placeholder="your phone number"
+      />
+    </div>
+    <div class="form-group">
+      <label for="grade">School Grade</label>
+      <select [(ngModel)]="clientEdit().grade">
+        <option [ngValue]="grade" *ngFor="let grade of this.grades()">
+          {{ grade.label }}
+        </option>
+      </select>
+    </div>
+    <div class="btn">
+      <button
+        routerLink="/clientlist"
+        (click)="updateClientInfos()"
+        type="submit"
+      >
+        edit Client
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- End edit client section -->

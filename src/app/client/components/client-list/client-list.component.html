@@ -1,0 +1,66 @@
+<!-- Start List client section -->
+<div class="client-list-section">
+  <!-- Start Table Section -->
+  <div class="table" *ngIf="!this.showClientInfos()">
+    <table>
+      <thead>
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>School Grade</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of this.clients()">
+          <td #client (click)="onClick(client.id)">
+            <a> {{ client.firstName }}</a>
+          </td>
+          <td #client (click)="onClick(client.id)">
+            <a> {{ client.lastName }}</a>
+          </td>
+          <td #client (click)="onClick(client.id)">
+            <a> {{ client.grade.label }}</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End Table Section -->
+  <!-- Start Pop-up Section -->
+  <div class="more-infos-section">
+    <div class="more-infos" *ngIf="this.showClientInfos()">
+      <a routerLink="/editclient" type="button"
+        ><i class="fa-solid fa-pen"></i
+      ></a>
+      <a (click)="deleteClient()" routerLink="/clientlist" type="button"
+        ><i class="fa-solid fa-trash"></i
+      ></a>
+      <a (click)="closeMoreInfos()" type="button"
+        ><i class="fa-solid fa-plus"></i
+      ></a>
+
+      <div class="infos" *ngFor="let client of this.clientsFilter()">
+        <h4>
+          First Name : <span> {{ client.firstName }} </span>
+        </h4>
+
+        <h4>
+          Last Name : <span> {{ client.lastName }} </span>
+        </h4>
+        <h4>
+          School Grade: <span> {{ client.grade.label }} </span>
+        </h4>
+        <h4>
+          Phone Number : <span> {{ client.phoneNumber }} </span>
+        </h4>
+        <h4 class="status-label">Status :</h4>
+        <span class="status" *ngFor="let stat of client.status">
+          {{ stat }}
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- End Pop-up Section -->
+</div>
+
+<!-- End List client section -->

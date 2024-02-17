@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav-bar</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a (click)="listStyleValue = 'home'" routerLink="/clientlist">
+          <img src="../assets/logo.png" alt="logo" />
+        </a>
+        <div class="nav">
+          <i (click)="showMenu()" class="fa-solid fa-bars toggle-menu"></i>
+          <!-- Start Menu 1 on large screen -->
+          <ul class="large-ul">
+            <li
+              [ngClass]="listStyleValue == 'home' ? 'li-active' : 'li-deactive'"
+            >
+              <a
+                (click)="listStyleValue = 'home'"
+                routerLink="/clientlist"
+                [ngStyle]="
+                  listStyleValue == 'home'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >Home</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'newclient' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'newclient'"
+                routerLink="/createclient"
+                [ngStyle]="
+                  listStyleValue == 'newclient'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >New Client</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'newgrade' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'newgrade'"
+                routerLink="/clientgrade"
+                [ngStyle]="
+                  listStyleValue == 'newgrade'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >New Grade</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'about' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'about'"
+                routerLink="#"
+                [ngStyle]="
+                  listStyleValue == 'about'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >About</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'contact' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'contact'"
+                routerLink="#"
+                [ngStyle]="
+                  listStyleValue == 'contact'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- End Menu 1 on large screen -->
+          <!-- Start Menu 2 on large screen -->
+          <ul
+            class="small-ul"
+            [ngStyle]="
+              showMenuStatus() == true
+                ? {
+                    display: 'flex'
+                  }
+                : { display: 'none' }
+            "
+          >
+            <li (click)="showMenu()" routerLink="/clientlist">Home</li>
+            <li
+              [ngClass]="
+                listStyleValue == 'newclient' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'newclient'; showMenu()"
+                routerLink="/createclient"
+                [ngStyle]="
+                  listStyleValue == 'newclient'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >New Client</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'newgrade' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'newgrade'; showMenu()"
+                routerLink="/clientgrade"
+                [ngStyle]="
+                  listStyleValue == 'newgrade'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >New Grade</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'about' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'about'; showMenu()"
+                routerLink="#"
+                [ngStyle]="
+                  listStyleValue == 'about'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >About</a
+              >
+            </li>
+            <li
+              [ngClass]="
+                listStyleValue == 'contact' ? 'li-active' : 'li-deactive'
+              "
+            >
+              <a
+                (click)="listStyleValue = 'contact'; showMenu()"
+                routerLink="#"
+                [ngStyle]="
+                  listStyleValue == 'contact'
+                    ? { color: 'white' }
+                    : { color: '#04d48f' }
+                "
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <!-- End Menu 2 on large screen -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

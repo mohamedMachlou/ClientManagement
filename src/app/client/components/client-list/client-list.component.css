@@ -1,0 +1,164 @@
+/* Start add client section */
+.client-list-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: var(--margin-section);
+  margin-top: var(--margin-section);
+  margin-bottom: var(--margin-section);
+  width: 100%;
+}
+.client-list-section .table {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  width: 100%;
+  /* box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px; */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.client-list-section table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.client-list-section thead tr {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: #04d48f;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+}
+.client-list-section tbody tr {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: #c9f3b6;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(32, 30, 30);
+}
+.client-list-section table td {
+  width: 20px;
+  height: 40px;
+  text-align: center;
+}
+.client-list-section tbody td {
+  cursor: pointer;
+}
+.client-list-section tbody td a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+.client-list-section tbody td a:visited {
+  text-decoration: none;
+  color: black;
+}
+.client-list-section .more-infos-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+}
+.client-list-section .more-infos {
+  background-color: rgb(241, 235, 235);
+  width: 70%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* display: none; */
+}
+.client-list-section .more-infos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47.5%;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.client-list-section .more-infos a:nth-child(1) {
+  background-color: var(--main-color);
+  text-decoration: none;
+}
+.client-list-section .more-infos a:nth-child(1):hover {
+  background-color: var(--main-color-hover);
+}
+.client-list-section .more-infos a:nth-child(1):active {
+  background-color: var(--main-color-active);
+}
+.client-list-section .more-infos a:nth-child(1):visited {
+  background-color: var(--main-color);
+  color: black;
+}
+.client-list-section .more-infos a:nth-child(2) {
+  background-color: var(--secondary-color);
+}
+.client-list-section .more-infos a:nth-child(2):hover {
+  background-color: var(--secondary-color-hover);
+}
+.client-list-section .more-infos a:nth-child(2):active {
+  background-color: var(--secondary-color-active);
+}
+.client-list-section .more-infos a:nth-child(2):visited {
+  background-color: var(--secondary-color);
+  color: black;
+}
+.client-list-section .more-infos a:nth-child(3) {
+  background-color: #e22b13;
+  width: 5%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.client-list-section .more-infos a:nth-child(3):hover {
+  background-color: rgb(216, 97, 51);
+}
+.client-list-section .more-infos a:nth-child(3) i {
+  transform: rotate(45deg);
+}
+.client-list-section .more-infos i {
+  width: 10%;
+  text-align: center;
+}
+.client-list-section .more-infos i:nth-child(1) {
+  text-decoration: none;
+  border: none;
+  color: blackll;
+}
+.client-list-section .more-infos .infos {
+  width: 100%;
+  padding: var(--padding-section);
+  margin: var(--margin-section);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.client-list-section .more-infos .infos h4 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 5px;
+  width: 50%;
+  text-align: center;
+}
+.client-list-section .more-infos .infos .status-label {
+  width: 100%;
+}
+.client-list-section .more-infos .infos .status {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: #e29c6d;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  width: 20%;
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+  font-family: 800;
+  font-size: 20px;
+}
+.client-list-section .more-infos .infos .status:hover {
+  background-color: #e26817;
+}

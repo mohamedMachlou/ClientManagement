@@ -1,0 +1,278 @@
+{
+  "client": [
+    {
+      "id": 2,
+      "firstName": "Mohamed",
+      "lastName": "Machlou",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "1er  Année Baccalauréat",
+        "id": 10
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Siham",
+      "lastName": "Elkhiyati",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "3eme Année Paimaire",
+        "id": 6
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 10,
+      "firstName": "Aissam ",
+      "lastName": "Chouali",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "2eme Année Baccalauréat",
+        "id": 26
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 13,
+      "firstName": "Hakim ",
+      "lastName": "Ziyech",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "Tronc Commun",
+        "id": 24
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 16,
+      "firstName": "Yassine",
+      "lastName": "Bounou",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "1er Année Baccalauréat",
+        "id": 25
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 19,
+      "firstName": "Soukaina",
+      "lastName": "Kali",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "1er Année Baccalauréat",
+        "id": 25
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 22,
+      "firstName": "Souzan",
+      "lastName": "Gadri",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "2eme Année Baccalauréat",
+        "id": 26
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 23,
+      "firstName": "Mohamed",
+      "lastName": "Elkhanousse",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "Tronc Commun",
+        "id": 24
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 24,
+      "firstName": "Abdellah",
+      "lastName": "Idsalem",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "2eme Année Baccalauréat",
+        "id": 26
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    },
+    {
+      "id": 25,
+      "firstName": "Ayoub",
+      "lastName": "Bensassi",
+      "phoneNumber": "+212653508459",
+      "grade": {
+        "label": "Tronc Commun",
+        "id": 24
+      },
+      "status": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "April",
+        "Mai",
+        "Juin",
+        "Juilet",
+        "Aout",
+        "Septembre",
+        "Octobre",
+        "Nouvembre",
+        "Décembre"
+      ]
+    }
+  ],
+  "grade": [
+    {
+      "label": "2eme Année Collège",
+      "id": 22
+    },
+    {
+      "label": "3eme Année Collège",
+      "id": 23
+    },
+    {
+      "label": "Tronc Commun",
+      "id": 24
+    },
+    {
+      "label": "1er Année Baccalauréat",
+      "id": 25
+    },
+    {
+      "label": "2eme Année Baccalauréat",
+      "id": 26
+    },
+    {
+      "label": "1er Année Collège",
+      "id": 27
+    },
+    {
+      "label": "1er Année Primaire",
+      "id": 28
+    },
+    {
+      "label": "Developer",
+      "id": 29
+    }
+  ]
+}

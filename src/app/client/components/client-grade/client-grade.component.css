@@ -1,0 +1,103 @@
+/* Start Client Grade Section */
+.client-grade-section {
+  width: 100%;
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  margin-top: var(--margin-section);
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  position: relative;
+}
+.client-grade-section .add-grade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: var(--padding-section);
+  margin-bottom: var(--margin-section);
+}
+.client-grade-section .add-grade h3 {
+  padding-right: var(--padding-section);
+  padding-left: var(--padding-section);
+  font-weight: 700;
+  font-size: 15px;
+}
+.client-grade-section .add-grade i {
+  background-color: var(--secondary-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+.client-grade-section .form-group {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.client-grade-section .form-group label {
+  width: 100%;
+}
+.client-grade-section .form-group input {
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.client-grade-section .grades-list {
+  width: 90%;
+}
+.client-grade-section .grades-list {
+  box-shadow: #0000000d 0px 0px 0px 1px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: var(--padding-section);
+  padding-right: var(--padding-section);
+}
+.client-grade-section .grades-list .list-item {
+  box-shadow: #0000000d 0px 0px 0px 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding-left: var(--padding-section);
+  padding-right: var(--padding-section);
+  margin-bottom: 10px;
+  list-style: none;
+}
+.client-grade-section a {
+  color: white;
+  height: 100%;
+  padding: 12px;
+}
+.client-grade-section a:first-child {
+  background-color: var(--main-color);
+}
+.client-grade-section a:first-child:hover {
+  background-color: var(--main-color-hover);
+  cursor: pointer;
+}
+.client-grade-section a:first-child:active {
+  background-color: var(--main-color-active);
+}
+.client-grade-section a:last-child {
+  background-color: var(--secondary-color);
+}
+.client-grade-section a:last-child:hover {
+  background-color: var(--secondary-color-hover);
+  cursor: pointer;
+}
+.client-grade-section a:last-child:active {
+  background-color: var(--secondary-color-active);
+}

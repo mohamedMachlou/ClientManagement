@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  width: 100%;
+}
+.header .container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  position: relative;
+}
+.header .container .nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  height: 60%;
+}
+.header .nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header .nav ul li {
+  list-style: none;
+  padding: 20px 30px;
+  height: 100%;
+  transition: 0.3s;
+  font-size: 18px;
+  color: var(--main-color);
+}
+.li-deactive {
+  /* color: var(--main-color); */
+  color: white;
+}
+.li-active {
+  background-color: var(--main-color);
+  color: white;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  width: 130px;
+  padding: 5px;
+}
+.header .nav ul li:hover a {
+  color: white !important;
+}
+.header .nav ul li:hover {
+  background-color: var(--main-color);
+}
+@media (min-width: 998px) {
+  .header .container {
+    align-items: center;
+  }
+  .header .nav .small-ul {
+    display: none;
+  }
+  .toggle-menu {
+    display: none;
+  }
+  .header .container .nav::after {
+    content: " ";
+    width: 685px;
+    height: 2px;
+    /* background-color: red; */
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 16px;
+    right: 0px;
+  }
+}
+@media (max-width: 997px) {
+  .header .container .nav {
+    flex-direction: column;
+  }
+  .header .nav .large-ul {
+    display: none;
+  }
+
+  .header .nav ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: #414040;
+    padding-left: 0px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 3;
+  }
+
+  .header .nav ul li {
+    padding-left: 25px;
+  }
+  .header .nav ul li:not(:last-child) {
+    border-bottom: 1px solid var(--main-color);
+  }
+  .toggle-menu {
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+  .hideMenu {
+    display: none;
+  }
+  .showMenu {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .header .container {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+  }
+  .hideMenu {
+    display: none;
+  }
+  .showMenu {
+    display: flex;
+  }
+}

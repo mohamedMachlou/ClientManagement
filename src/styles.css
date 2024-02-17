@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+/* Developer MACHLOU MOHAMED */
+/* Start Variables */
+:root {
+  /* --main-color: #2a2c2b; */
+  --main-color: #04d48f;
+  --main-color-hover: #57e2b4;
+  --main-color-active: #09e740;
+  --secondary-color: #da411a;
+  --secondary-color-hover: #d1735b;
+  --secondary-color-active: #e41717;
+  --text-color: #fdfde8;
+  --text-sec-color: #5c5e5c;
+  --padding-section: 10px;
+  --margin-section: 65px;
+  --text-padding: 10px;
+}
+/* End Variables */
+/* Start Global Rules  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  caret-color: transparent;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-color: #2d2e2d; */
+  /* background-color: #2a2c2b; */
+  /* color: white; */
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules  */
