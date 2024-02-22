@@ -26,6 +26,7 @@
     </table>
   </div>
   <!-- End Table Section -->
+
   <!-- Start Pop-up Section -->
   <div class="more-infos-section">
     <div class="more-infos" *ngIf="this.showClientInfos()">
@@ -53,10 +54,14 @@
         <h4>
           Phone Number : <span> {{ client.phoneNumber }} </span>
         </h4>
-        <h4 class="status-label">Status :</h4>
-        <span class="status">
-          {{ client.status }}
-        </span>
+        <div class="subscription-date">
+          <h4>
+            Subscription Date : <span> {{ client.subDate }} </span>
+          </h4>
+        </div>
+        <div class="status">
+          <h4 class="status-label">Status :</h4>
+        </div>
       </div>
     </div>
   </div>

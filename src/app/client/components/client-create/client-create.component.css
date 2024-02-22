@@ -78,10 +78,10 @@
   align-items: center;
 }
 .form .btn button {
-  width: 40%;
+  width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 15px;
   border: none;
   border-radius: 2px;

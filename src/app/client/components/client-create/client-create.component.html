@@ -41,16 +41,16 @@
         </option>
       </select>
     </div>
-    <div class="btn">
-      <button
-        routerLink="/clientlist"
-        (click)="createNewClient()"
-        type="submit"
-      >
-        Add Client
-      </button>
+    <div class="form-group">
+      <label for="grade">Subscribe Date</label>
+      <input [(ngModel)]="newClient().subDate" type="date" />
+    </div>
+    <div class="form-group">
+      <div class="btn">
+        <button (click)="createNewClient()">Add New Client</button>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- End add client section -->
+  <!-- End add client section -->
+</div>

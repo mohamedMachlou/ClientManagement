@@ -27,7 +27,7 @@ export class ClientListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAllClients();
-    console.log(this.showClientInfos());
+    console.log(new Date());
   }
 
   // Get All Clients
