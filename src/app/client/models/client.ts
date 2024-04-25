@@ -1,4 +1,5 @@
 import { Grade } from './grade';
+import { Month } from './month';
 
 export interface Client {
   id?: number;
@@ -8,4 +9,5 @@ export interface Client {
   grade: Grade;
   status: boolean;
   subDate: Date;
+  months: Month[];
 }

@@ -11,6 +11,7 @@
         </tr>
       </thead>
       <tbody>
+        <div *ngIf="!this.clients().length">Clients List is Empty !!!</div>
         <tr *ngFor="let client of this.clients()">
           <td #client (click)="onClick(client.id)">
             <a> {{ client.firstName }}</a>
@@ -39,7 +40,6 @@
       <a (click)="closeMoreInfos()" type="button"
         ><i class="fa-solid fa-plus"></i
       ></a>
-
       <div class="infos" *ngFor="let client of this.clientsFilter()">
         <h4>
           First Name : <span> {{ client.firstName }} </span>
@@ -61,6 +61,34 @@
         </div>
         <div class="status">
           <h4 class="status-label">Status :</h4>
+          <div class="months-section">
+            <table>
+              <tbody>
+                <tr *ngFor="let month of client.months">
+                  <td>
+                    <div class="validation">
+                      <div class="month">{{ month.title }}</div>
+
+                      <button
+                        class="valide"
+                        *ngIf="!month.active"
+                        (click)="monthManagement(month.title)"
+                      >
+                        Validé
+                      </button>
+                      <button
+                        class="non-valide"
+                        *ngIf="month.active"
+                        (click)="monthManagement(month.title)"
+                      >
+                        Non Validé
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

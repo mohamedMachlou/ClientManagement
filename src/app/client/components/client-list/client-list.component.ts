@@ -15,6 +15,7 @@ export class ClientListComponent implements OnInit {
   clientStatus = signal<[]>([]);
   showClientInfos = signal<boolean>(false);
   clientEditId = signal<number>(0);
+  months = signal<[]>([]);
   client = signal<Client>({
     id: 0,
     firstName: '',
@@ -23,11 +24,60 @@ export class ClientListComponent implements OnInit {
     grade: { id: 0, label: '' },
     status: false,
     subDate: new Date(),
+    months: [
+      {
+        title: 'January',
+        active: true,
+      },
+      {
+        title: 'February',
+        active: true,
+      },
+      {
+        title: 'March',
+        active: false,
+      },
+      {
+        title: 'April',
+        active: false,
+      },
+      {
+        title: 'May',
+        active: false,
+      },
+      {
+        title: 'June',
+        active: false,
+      },
+      {
+        title: 'July',
+        active: false,
+      },
+      {
+        title: 'August',
+        active: false,
+      },
+      {
+        title: 'September',
+        active: false,
+      },
+      {
+        title: 'October',
+        active: false,
+      },
+      {
+        title: 'November',
+        active: false,
+      },
+      {
+        title: 'December',
+        active: false,
+      },
+    ],
   });
 
   ngOnInit(): void {
     this.getAllClients();
-    console.log(new Date());
   }
 
   // Get All Clients
@@ -45,7 +95,14 @@ export class ClientListComponent implements OnInit {
     this.clientsFilter.set(
       this.clients().filter((client: Client) => client.id == id)
     );
+    console.log(this.clientsFilter());
   }
+
+  // Manage Month
+  monthManagement(month: string) {
+    console.log(month);
+  }
+
   // Close More Infos Section Pop-up
   closeMoreInfos() {
     Swal.fire({
