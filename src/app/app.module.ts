@@ -12,10 +12,17 @@ import { ClientEditComponent } from './client/components/client-edit/client-edit
 import { ClientGradeComponent } from './client/components/client-grade/client-grade.component';
 import { ClientListComponent } from './client/components/client-list/client-list.component';
 import { PageNotFoundComponent } from './client/components/page-not-found/page-not-found.component';
+import { GithubMembersModule } from './github-members/github-members.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ClientModule,
+    FormsModule,
+    GithubMembersModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
