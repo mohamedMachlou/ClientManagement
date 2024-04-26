@@ -1,99 +1,101 @@
 <!-- Start List client section -->
 <div class="client-list-section">
-  <!-- Start Table Section -->
-  <div class="table" *ngIf="!this.showClientInfos()">
-    <table>
-      <thead>
-        <tr>
-          <td>First Name</td>
-          <td>Last Name</td>
-          <td>School Grade</td>
-        </tr>
-      </thead>
-      <tbody>
-        <div *ngIf="!this.clients().length">Clients List is Empty !!!</div>
-        <tr *ngFor="let client of this.clients()">
-          <td #client (click)="onClick(client.id)">
-            <a> {{ client.firstName }}</a>
-          </td>
-          <td #client (click)="onClick(client.id)">
-            <a> {{ client.lastName }}</a>
-          </td>
-          <td #client (click)="onClick(client.id)">
-            <a> {{ client.grade.label }}</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <!-- End Table Section -->
+  <div class="container">
+    <!-- Start Table Section -->
+    <div class="table" *ngIf="!this.showClientInfos()">
+      <table>
+        <thead>
+          <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>School Grade</td>
+          </tr>
+        </thead>
+        <tbody>
+          <div *ngIf="!this.clients().length">Clients List is Empty !!!</div>
+          <tr *ngFor="let client of this.clients()">
+            <td #client (click)="onClick(client.id)">
+              <a> {{ client.firstName }}</a>
+            </td>
+            <td #client (click)="onClick(client.id)">
+              <a> {{ client.lastName }}</a>
+            </td>
+            <td #client (click)="onClick(client.id)">
+              <a> {{ client.grade.label }}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- End Table Section -->
 
-  <!-- Start Pop-up Section -->
-  <div class="more-infos-section">
-    <div class="more-infos" *ngIf="this.showClientInfos()">
-      <a routerLink="/editclient" type="button"
-        ><i class="fa-solid fa-pen"></i
-      ></a>
-      <a (click)="deleteClient()" routerLink="/clientlist" type="button"
-        ><i class="fa-solid fa-trash"></i
-      ></a>
-      <a (click)="closeMoreInfos()" type="button"
-        ><i class="fa-solid fa-plus"></i
-      ></a>
-      <div class="infos" *ngFor="let client of this.clientsFilter()">
-        <h4>
-          First Name : <span> {{ client.firstName }} </span>
-        </h4>
-
-        <h4>
-          Last Name : <span> {{ client.lastName }} </span>
-        </h4>
-        <h4>
-          School Grade: <span> {{ client.grade.label }} </span>
-        </h4>
-        <h4>
-          Phone Number : <span> {{ client.phoneNumber }} </span>
-        </h4>
-        <div class="subscription-date">
+    <!-- Start Pop-up Section -->
+    <div class="more-infos-section">
+      <div class="more-infos" *ngIf="this.showClientInfos()">
+        <a routerLink="/editclient" type="button"
+          ><i class="fa-solid fa-pen"></i
+        ></a>
+        <a (click)="deleteClient()" routerLink="/clientlist" type="button"
+          ><i class="fa-solid fa-trash"></i
+        ></a>
+        <a (click)="closeMoreInfos()" type="button"
+          ><i class="fa-solid fa-plus"></i
+        ></a>
+        <div class="infos" *ngFor="let client of this.clientsFilter()">
           <h4>
-            Subscription Date : <span> {{ client.subDate }} </span>
+            First Name : <span> {{ client.firstName }} </span>
           </h4>
-        </div>
-        <div class="status">
-          <h4 class="status-label">Status :</h4>
-          <div class="months-section">
-            <table>
-              <tbody>
-                <tr *ngFor="let month of client.months">
-                  <td>
-                    <div class="validation">
-                      <div class="month">{{ month.title }}</div>
 
-                      <button
-                        class="valide"
-                        *ngIf="!month.active"
-                        (click)="monthManagement(month.title)"
-                      >
-                        Validé
-                      </button>
-                      <button
-                        class="non-valide"
-                        *ngIf="month.active"
-                        (click)="monthManagement(month.title)"
-                      >
-                        Non Validé
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <h4>
+            Last Name : <span> {{ client.lastName }} </span>
+          </h4>
+          <h4>
+            School Grade: <span> {{ client.grade.label }} </span>
+          </h4>
+          <h4>
+            Phone Number : <span> {{ client.phoneNumber }} </span>
+          </h4>
+          <div class="subscription-date">
+            <h4>
+              Subscription Date : <span> {{ client.subDate }} </span>
+            </h4>
+          </div>
+          <div class="status">
+            <h4 class="status-label">Status :</h4>
+            <div class="months-section">
+              <table>
+                <tbody>
+                  <tr *ngFor="let month of client.months">
+                    <td>
+                      <div class="validation">
+                        <div class="month">{{ month.title }}</div>
+
+                        <button
+                          class="valide"
+                          *ngIf="!month.active"
+                          (click)="monthManagement(month.title)"
+                        >
+                          Validé
+                        </button>
+                        <button
+                          class="non-valide"
+                          *ngIf="month.active"
+                          (click)="monthManagement(month.title)"
+                        >
+                          Non Validé
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- End Pop-up Section -->
   </div>
-  <!-- End Pop-up Section -->
 </div>
 
 <!-- End List client section -->

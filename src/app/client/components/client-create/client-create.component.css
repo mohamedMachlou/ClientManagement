@@ -1,6 +1,6 @@
 /* Start add client section */
-.add-client-section {
-  width: 100%;
+.add-client-section .container {
+  width: 83%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

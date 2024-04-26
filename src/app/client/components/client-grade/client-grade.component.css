@@ -1,6 +1,6 @@
 /* Start Client Grade Section */
-.client-grade-section {
-  width: 100%;
+.client-grade-section .container {
+  width: 83%;
   padding-top: var(--padding-section);
   padding-bottom: var(--padding-section);
   margin-top: var(--margin-section);

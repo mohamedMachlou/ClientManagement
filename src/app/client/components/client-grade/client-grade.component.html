@@ -1,32 +1,34 @@
 <div class="client-grade-section">
-  <div class="add-grade">
-    <i class="fa-regular fa-newspaper"></i>
-    <h3>Show School Grade List</h3>
-  </div>
-  <div class="form-group">
-    <label for="grade">School Grade</label>
-    <input
-      [ngStyle]="{ 'caret-color': 'black' }"
-      required
-      (keyup.enter)="createOrUpdateGrade()"
-      #temp
-      [value]="label()"
-      (input)="label.set(temp.value)"
-      id="grade"
-      type="text"
-      placeholder="add new school grade"
-    />
-  </div>
-  <div class="grades-list">
-    <div class="list-item" *ngFor="let grade of grades()">
-      {{ grade.label }}
-      <div class="icon">
-        <a (click)="editGrade(grade)" type="button"
-          ><i class="fa-solid fa-pen"></i
-        ></a>
-        <a *ngIf="grade.id" (click)="deleteGrade(grade.id)" type="button"
-          ><i class="fa-solid fa-trash"></i
-        ></a>
+  <div class="container">
+    <div class="add-grade">
+      <i class="fa-regular fa-newspaper"></i>
+      <h3>Show School Grade List</h3>
+    </div>
+    <div class="form-group">
+      <label for="grade">School Grade</label>
+      <input
+        [ngStyle]="{ 'caret-color': 'black' }"
+        required
+        (keyup.enter)="createOrUpdateGrade()"
+        #temp
+        [value]="label()"
+        (input)="label.set(temp.value)"
+        id="grade"
+        type="text"
+        placeholder="add new school grade"
+      />
+    </div>
+    <div class="grades-list">
+      <div class="list-item" *ngFor="let grade of grades()">
+        {{ grade.label }}
+        <div class="icon">
+          <a (click)="editGrade(grade)" type="button"
+            ><i class="fa-solid fa-pen"></i
+          ></a>
+          <a *ngIf="grade.id" (click)="deleteGrade(grade.id)" type="button"
+            ><i class="fa-solid fa-trash"></i
+          ></a>
+        </div>
       </div>
     </div>
   </div>

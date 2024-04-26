@@ -1,13 +1,13 @@
 {
   "client": [
     {
-      "id": 1,
-      "firstName": "Mohamed",
-      "lastName": "Machlou",
+      "id": 4,
+      "firstName": "Bilal",
+      "lastName": "Elkhanousse ",
       "phoneNumber": "+212653508459",
       "grade": {
-        "label": "Developer",
-        "id": 29
+        "label": "Tronc Commun",
+        "id": 24
       },
       "status": false,
       "subDate": "2024-04-25",
@@ -65,36 +65,16 @@
   ],
   "grade": [
     {
-      "label": "2eme Année Collège",
-      "id": 22
-    },
-    {
-      "label": "3eme Année Collège",
-      "id": 23
-    },
-    {
-      "label": "Tronc Commun",
-      "id": 24
-    },
-    {
-      "label": "1er Année Baccalauréat",
-      "id": 25
-    },
-    {
-      "label": "2eme Année Baccalauréat",
-      "id": 26
-    },
-    {
-      "label": "1er Année Collège",
-      "id": 27
-    },
-    {
-      "label": "1er Année Primaire",
-      "id": 28
+      "id": 28,
+      "label": "Ingénieur"
     },
     {
       "label": "Developer",
       "id": 29
+    },
+    {
+      "label": "Ileic",
+      "id": 31
     }
   ]
 }

@@ -2,6 +2,7 @@ import { Component, OnInit, inject, signal } from '@angular/core';
 import { ClientService } from '../../services/client.service';
 import { Client } from '../../models/client';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-client-list',
@@ -16,6 +17,8 @@ export class ClientListComponent implements OnInit {
   showClientInfos = signal<boolean>(false);
   clientEditId = signal<number>(0);
   months = signal<[]>([]);
+
+  router = inject(Router);
   client = signal<Client>({
     id: 0,
     firstName: '',
@@ -135,6 +138,7 @@ export class ClientListComponent implements OnInit {
               (client) => client.id !== this.clientEditId()
             );
             console.log('inside delete fct : ', this.clientEditId());
+            this.router.navigate(['clientlist']);
           });
         this.showClientInfos.set(false);
       }

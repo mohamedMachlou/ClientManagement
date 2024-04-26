@@ -3,6 +3,7 @@ import { Grade } from '../../models/grade';
 import { GradeService } from '../../services/grade.service';
 import { Client } from '../../models/client';
 import { ClientService } from '../../services/client.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-client-create',
@@ -73,6 +74,7 @@ export class ClientCreateComponent implements OnInit {
   // Injection of the services
   gradeService = inject(GradeService);
   clientService = inject(ClientService);
+  router = inject(Router);
 
   ngOnInit(): void {
     this.getAllGrades();
@@ -154,6 +156,7 @@ export class ClientCreateComponent implements OnInit {
     this.clientService.createClient(this.newClient()).subscribe((response) => {
       console.log(response);
       this.resetClientInfos();
+      this.router.navigate(['clientlist']);
     });
   }
 }

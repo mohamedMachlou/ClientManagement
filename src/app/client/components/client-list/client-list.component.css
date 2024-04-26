@@ -1,12 +1,12 @@
 /* Start add client section */
-.client-list-section {
+.client-list-section .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: var(--margin-section);
   margin-top: var(--margin-section);
   margin-bottom: var(--margin-section);
-  width: 100%;
+  width: 85%;
 }
 .client-list-section .table {
   padding-top: var(--padding-section);
