@@ -63,6 +63,7 @@
   height: 30px;
   margin-top: 5px;
   margin-bottom: 15px;
+  caret-color: black;
 }
 .edit-client-section .form-group select {
   width: 100%;

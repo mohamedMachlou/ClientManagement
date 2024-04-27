@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { RouterModule } from '@angular/router';
     ClientDashboardComponent,
     NavBarComponent,
     PageNotFoundComponent,
+    ContactComponent,
   ],
   imports: [CommonModule, HttpClientModule, FormsModule, RouterModule],
   exports: [

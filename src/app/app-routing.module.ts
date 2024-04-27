@@ -6,6 +6,7 @@ import { ClientGradeComponent } from './client/components/client-grade/client-gr
 import { PageNotFoundComponent } from './client/components/page-not-found/page-not-found.component';
 import { ClientListComponent } from './client/components/client-list/client-list.component';
 import { GithubMembersListComponent } from './github-members/github-members-list/github-members-list.component';
+import { ContactComponent } from './client/components/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'githubmembers',
     component: GithubMembersListComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
   },
   {
     path: '**',
