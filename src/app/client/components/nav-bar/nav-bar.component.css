@@ -66,12 +66,12 @@
   }
   .header .container .nav::after {
     content: " ";
-    width: 685px;
+    width: 700px;
     height: 2px;
     background-color: var(--main-color);
     position: absolute;
     bottom: 16px;
-    right: 0px;
+    right: 34px;
   }
 }
 @media (max-width: 997px) {

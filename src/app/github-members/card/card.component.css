@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  border: 0.3px solid var(--main-color);
+  border-radius: 8px;
+}
+.card .card-img-top {
+  width: 100%;
+  border-radius: 8px;
+}
+.card .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card .card-body .card-title {
+  color: var(--main-color);
+  font-weight: 800;
+  font-size: large;
+  text-align: center;
+  width: 80%;
+}
+.card .card-body .github-url {
+ 
+  color: #fefefe;
+  background-color: var(--main-color);
+  width: 80%;
+  min-height: 30px;
+  font-weight: 700;
+  font-size: large;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+.card .card-body .github-url:hover {
+    color: var(--main-color);
+    background-color: #ffffff;
