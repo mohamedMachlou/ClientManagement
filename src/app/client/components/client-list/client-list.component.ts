@@ -138,7 +138,7 @@ export class ClientListComponent implements OnInit {
               (client) => client.id !== this.clientEditId()
             );
             console.log('inside delete fct : ', this.clientEditId());
-            this.router.navigate(['clientlist']);
+            this.router.navigate(['/']);
           });
         this.showClientInfos.set(false);
       }

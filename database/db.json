@@ -125,68 +125,6 @@
       ]
     },
     {
-      "id": 7,
-      "firstName": "Hicham",
-      "lastName": "Machlou",
-      "phoneNumber": "+212653508459",
-      "grade": {
-        "id": 28,
-        "label": "Ingénieur"
-      },
-      "status": false,
-      "subDate": "2024-04-27",
-      "months": [
-        {
-          "title": "January",
-          "active": true
-        },
-        {
-          "title": "February",
-          "active": true
-        },
-        {
-          "title": "March",
-          "active": false
-        },
-        {
-          "title": "April",
-          "active": false
-        },
-        {
-          "title": "May",
-          "active": false
-        },
-        {
-          "title": "June",
-          "active": false
-        },
-        {
-          "title": "July",
-          "active": false
-        },
-        {
-          "title": "August",
-          "active": false
-        },
-        {
-          "title": "September",
-          "active": false
-        },
-        {
-          "title": "October",
-          "active": false
-        },
-        {
-          "title": "November",
-          "active": false
-        },
-        {
-          "title": "December",
-          "active": false
-        }
-      ]
-    },
-    {
       "id": 8,
       "firstName": "Abderrahim",
       "lastName": "Machlou",

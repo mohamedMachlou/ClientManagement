@@ -16,6 +16,7 @@
           <!-- Start Menu 1 on large screen -->
           <ul class="large-ul">
             <li
+              (click)="goToHome()"
               [ngClass]="listStyleValue == 'home' ? 'li-active' : 'li-deactive'"
             >
               <a
@@ -30,6 +31,7 @@
               >
             </li>
             <li
+              (click)="goToCreateClient()"
               [ngClass]="
                 listStyleValue == 'newclient' ? 'li-active' : 'li-deactive'
               "
@@ -46,6 +48,7 @@
               >
             </li>
             <li
+              (click)="goToNewGrade()"
               [ngClass]="
                 listStyleValue == 'newgrade' ? 'li-active' : 'li-deactive'
               "
@@ -62,6 +65,7 @@
               >
             </li>
             <li
+              (click)="goToGitHubMembers()"
               [ngClass]="
                 listStyleValue == 'about' ? 'li-active' : 'li-deactive'
               "
@@ -78,6 +82,7 @@
               >
             </li>
             <li
+              (click)="goToContact()"
               [ngClass]="
                 listStyleValue == 'contact' ? 'li-active' : 'li-deactive'
               "

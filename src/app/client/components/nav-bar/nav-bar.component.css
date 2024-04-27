@@ -69,7 +69,7 @@
   }
   .header .container .nav::after {
     content: " ";
-    width: 700px;
+    width: 730px;
     height: 1px;
     background-color: var(--main-color);
     position: absolute;
