@@ -14,7 +14,27 @@
           id="firstName"
           type="text"
           placeholder="your first name"
+          #firstName="ngModel"
+          name="firstName"
+          required
+          minlength="4"
+          maxlength="20"
+          pattern="[a-zA-Z]+"
         />
+        <div
+          class="alert-danger"
+          *ngIf="firstName.touched && firstName.invalid"
+        >
+          <div *ngIf="firstName.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="firstName.errors?.['minlength']">
+            Taper au minimum 4 caratéres.
+          </div>
+          <div *ngIf="firstName.errors?.['pattern']">
+            Firstname diot etre alpha !!
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="lastName">Last Name</label>
@@ -23,7 +43,24 @@
           id="lastName"
           type="text"
           placeholder="your last name"
+          #lastName="ngModel"
+          name="lastName"
+          required
+          minlength="4"
+          maxlength="20"
+          pattern="[a-zA-Z]+"
         />
+        <div class="alert-danger" *ngIf="lastName.touched && lastName.invalid">
+          <div *ngIf="lastName.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="lastName.errors?.['minlength']">
+            Taper au minimum 4 caratéres.
+          </div>
+          <div *ngIf="lastName.errors?.['pattern']">
+            Firstname diot etre alpha !!
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="phone">Phone Number</label>
@@ -32,7 +69,24 @@
           id="phone"
           type="text"
           placeholder="your phone number"
+          #phone="ngModel"
+          name="phone"
+          required
+          minlength="10"
+          maxlength="13"
+          pattern="[+,0-9]+"
         />
+        <div class="alert-danger" *ngIf="phone.touched && phone.invalid">
+          <div *ngIf="phone.errors?.['required']">
+            Ce champs est obligatoire !!
+          </div>
+          <div *ngIf="phone.errors?.['minlength']">
+            Phone doit avoir 10 chiffres exemple: (+212)0 XXXXXXXXX.
+          </div>
+          <div *ngIf="phone.errors?.['pattern']">
+            Phone diot etre Numérique !!
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="grade">School Grade</label>
@@ -48,7 +102,12 @@
       </div>
       <div class="form-group">
         <div class="btn">
-          <button (click)="createNewClient()">Add New Client</button>
+          <button
+            (click)="createNewClient()"
+            [disabled]="!firstName.value || !lastName.value || !phone.value"
+          >
+            Add New Client
+          </button>
         </div>
       </div>
     </div>

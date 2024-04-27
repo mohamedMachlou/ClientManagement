@@ -20,7 +20,6 @@
   width: 80%;
 }
 .card .card-body .github-url {
- 
   color: #fefefe;
   background-color: var(--main-color);
   width: 80%;
@@ -35,5 +34,6 @@
   padding: 10px;
 }
 .card .card-body .github-url:hover {
-    color: var(--main-color);
-    background-color: #ffffff;
+  color: var(--main-color);
+  background-color: #ffffff;
+}
