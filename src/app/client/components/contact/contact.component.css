@@ -25,17 +25,19 @@
 }
 .contact-form .form-group label {
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
   width: 100%;
 }
 .container .contact .contact-form .form-group input {
   padding: 10px;
+  margin-top: 10px;
   width: 100%;
   caret-color: black;
   border-radius: 8px;
   border: 1px solid var(--main-color);
 }
 .container .contact .contact-form .form-group textarea {
+  margin-top: 10px;
   border: 1px solid var(--main-color);
   padding: 10px;
   min-width: 100%;
