@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
 }
 .container .contact h2 {
   text-align: center;
@@ -32,9 +33,10 @@
   width: 100%;
   caret-color: black;
   border-radius: 8px;
-  border: 1px solid #9e9c9c;
+  border: 1px solid var(--main-color);
 }
 .container .contact .contact-form .form-group textarea {
+  border: 1px solid var(--main-color);
   padding: 10px;
   min-width: 100%;
   max-width: 100%;
@@ -48,6 +50,7 @@
   border: 0px;
   border-radius: 8px;
   color: #ffffff;
+  font-weight: 700;
 }
 .container .contact .contact-form button:hover {
   background-color: var(--main-color-hover);

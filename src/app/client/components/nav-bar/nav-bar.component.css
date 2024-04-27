@@ -36,6 +36,7 @@
   font-size: 18px;
   color: var(--main-color);
   border-radius: 8px;
+  cursor: pointer;
 }
 .li-deactive {
   color: white;
