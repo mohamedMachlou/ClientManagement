@@ -111,8 +111,11 @@
                 : { display: 'none' }
             "
           >
-            <li (click)="showMenu(); goToHome()" routerLink="/clientlist">
-              Home
+            <li
+              (click)="showMenu(); goToHome(); listStyleValue = 'home'"
+              routerLink="/clientlist"
+            >
+              <a>Home</a>
             </li>
             <li
               [ngClass]="
