@@ -100,7 +100,7 @@
             </li>
           </ul>
           <!-- End Menu 1 on large screen -->
-          <!-- Start Menu 2 on large screen -->
+          <!-- Start Menu 2 on Small screen -->
           <ul
             class="small-ul"
             [ngStyle]="
@@ -111,11 +111,14 @@
                 : { display: 'none' }
             "
           >
-            <li (click)="showMenu()" routerLink="/clientlist">Home</li>
+            <li (click)="showMenu(); goToHome()" routerLink="/clientlist">
+              Home
+            </li>
             <li
               [ngClass]="
                 listStyleValue == 'newclient' ? 'li-active' : 'li-deactive'
               "
+              (click)="goToCreateClient(); showMenu()"
             >
               <a
                 (click)="listStyleValue = 'newclient'; showMenu()"
@@ -132,6 +135,7 @@
               [ngClass]="
                 listStyleValue == 'newgrade' ? 'li-active' : 'li-deactive'
               "
+              (click)="goToNewGrade(); showMenu()"
             >
               <a
                 (click)="listStyleValue = 'newgrade'; showMenu()"
@@ -148,26 +152,28 @@
               [ngClass]="
                 listStyleValue == 'about' ? 'li-active' : 'li-deactive'
               "
+              (click)="goToGitHubMembers(); showMenu()"
             >
               <a
                 (click)="listStyleValue = 'about'; showMenu()"
-                routerLink="#"
+                routerLink="'/githubmemebers'"
                 [ngStyle]="
                   listStyleValue == 'about'
                     ? { color: 'white' }
                     : { color: '#04d48f' }
                 "
-                >About</a
+                >GitHub Members</a
               >
             </li>
             <li
               [ngClass]="
                 listStyleValue == 'contact' ? 'li-active' : 'li-deactive'
               "
+              (click)="goToContact(); showMenu()"
             >
               <a
                 (click)="listStyleValue = 'contact'; showMenu()"
-                routerLink="#"
+                routerLink="/contact"
                 [ngStyle]="
                   listStyleValue == 'contact'
                     ? { color: 'white' }
@@ -177,7 +183,7 @@
               >
             </li>
           </ul>
-          <!-- End Menu 2 on large screen -->
+          <!-- End Menu 2 on Small screen -->
         </div>
       </div>
     </div>
